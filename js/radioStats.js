@@ -1,4 +1,4 @@
-const url = "http://192.30.164.78:8000/status-json.xsl";
+const url = "http://uk1.internet-radio.com:8251-json.xsl";
 window.stats = {
   radioName: null,
   listeners: 0,
@@ -15,21 +15,21 @@ window.jsonUpdate = () =>
       } else {
         for (let i = 0; i < window.json0.icestats.source.length; i += 1) {
           window.source = window.json0.icestats.source[i];
-          if (window.source.listenurl === "http://192.30.164.78:8000/stream") {
+          if (window.source.listenurl === "http://uk1.internet-radio.com:8251/stream") {
           } else if (
-            window.source.listenurl === "http://192.30.164.78:8000/bahia" &&
+            window.source.listenurl === "http://uk1.internet-radio.com:8251/stream" &&
             window.json0.icestats.source[0].stream_start
           ) {
             window.live = true;
             window.json1 = window.source;
           } else if (
-            window.source.listenurl === "http://192.30.164.78:8000/bahia" &&
+            window.source.listenurl === "http://uk1.internet-radio.com:8251/stream" &&
             !window.json0.icestats.source[0].stream_start
           ) {
             window.live = false;
           } else if (
             window.source.listenurl ===
-              "http://192.30.164.78:8000/bahiaCabina" &&
+              "http://uk1.internet-radio.com:8251/stream" &&
             !window.live
           ) {
             window.live = false;
