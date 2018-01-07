@@ -22,9 +22,9 @@ OfflinePluginRuntime.install({
 });
 
 window.offlineTrip = false;
-window.radioString = "http://192.30.164.78:8000/bahia";
-// window.radioString = 'http://192.30.164.78:8000/bahiaCabina';
-// window.radioString = 'http://192.30.164.78:8000/stream';
+window.radioString = "http://uk1.internet-radio.com:8251/stream";
+// window.radioString = 'http://uk1.internet-radio.com:8251/stream';
+// window.radioString = 'http://uk1.internet-radio.com:8251/stream';
 window.audioElement = document.getElementById("audioE");
 window.button = document.getElementById("button1");
 window.audioElement.src = window.radioString;
